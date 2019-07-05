@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mekvahan Delivery</string>
+    <string name="rubbing">Rubbing &amp; polishing </string>
+    <string name="drop_date">Drop date &amp; time </string>
+    <string name="_15_min_approx">15 min (approx)</string>
+    <string name="navigate">Navigate</string>
+    <string name="pickup_date_time"><![CDATA[Pickup date & time]]></string>
+    <string name="to_confirm_service_nadd_vehicle_pic_confirm_otp"><![CDATA[To confirm service\nadd vehicle pic & confirm OTP]]></string>
+
+    <string-array name="select_battery">
+        <item>Oxide</item>
+        <item>Exide</item>
+    </string-array>
+
+
+
+</resources>

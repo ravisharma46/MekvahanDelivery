@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_height="wrap_content"
+    tools:context=".show_account_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="PAN Number"
+                android:layout_marginTop="20dp"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/chart_opaque_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="DPNPK3106Q"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:scaleY=".5"
+            android:layout_marginTop="8dp"
+            android:layout_height="2dp"
+            android:background="@drawable/gradient_bottom"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Account Number"
+                android:layout_marginTop="20dp"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/chart_opaque_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="361234565323"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:scaleY=".5"
+            android:layout_marginTop="8dp"
+            android:layout_height="2dp"
+            android:background="@drawable/gradient_bottom"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="IFSC code"
+                android:layout_marginTop="20dp"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/chart_opaque_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="12345"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:scaleY=".5"
+            android:layout_marginTop="8dp"
+            android:layout_height="2dp"
+            android:background="@drawable/gradient_bottom"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Cancelled check"
+                android:layout_marginTop="20dp"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/chart_opaque_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="SBIN0011361"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:scaleY=".5"
+            android:layout_marginTop="8dp"
+            android:layout_height="2dp"
+            android:background="@drawable/gradient_bottom"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/bt_ok"
+        android:background="@drawable/done_red_button"
+        android:text="Ok"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/montserrat_medium1"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

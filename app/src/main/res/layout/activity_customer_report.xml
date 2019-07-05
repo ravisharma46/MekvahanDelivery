@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="32dp"
+    android:scrollbars="none"
+    tools:context=".customer_report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/offwhite"
+            android:textSize="10sp"
+            android:fontFamily="@font/montserrat_medium1"
+            android:text="Please allocate your vehicle and insert following details"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/frame_1"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:background="@color/chart_deep_red"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/bike_image"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bike_white"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="bike"
+                    android:id="@+id/bike"
+                    android:fontFamily="@font/montserrat_medium1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="40dp"
+                    android:textSize="15sp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/frame_2"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:id="@+id/car_image"
+                    android:src="@drawable/carblack"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Car"
+                    android:id="@+id/car"
+                    android:fontFamily="@font/montserrat_medium1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="40dp"
+                    android:textSize="15sp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="12dp"
+                    android:background="@color/chart_deep_red"
+                    android:layout_gravity="right"
+                    android:layout_height="match_parent" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="100dp">
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_medium1"
+                    android:textColor="@color/black"
+                    android:text="Customer Report Checkup"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="52dp"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tool kit"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="First aid kit"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:text="Key chain"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bike Cover"
+                        android:layout_margin="4dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Service book"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="-4dp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:text="Miscellneous \nTools"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_medium1"
+                    android:textColor="@color/black"
+                    android:text="Customer Report Count"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="52dp"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Head Rest"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:layout_height="28dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:text="Floor Mats"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:layout_height="28dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Wheel cap"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:layout_height="28dp" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:inputType="numberSigned"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="28dp" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:inputType="numberSigned"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="28dp" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:inputType="numberSigned"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="28dp" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mud Flap"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:layout_height="28dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mud Flap"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:layout_height="28dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mud Flap"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:layout_height="28dp" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:inputType="numberSigned"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="28dp" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:inputType="numberSigned"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="28dp" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:inputType="numberSigned"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="28dp" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium1"
+            android:textColor="@color/black"
+            android:text="Other Report"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="72dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:background="@null"
+                android:hint="For Other Report..."
+                android:fontFamily="@font/montserrat_medium1"
+                android:layout_height="wrap_content" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_medium1"
+                android:textColor="@color/black"
+                android:text="Battery Info"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="-16dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinner_brand"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:entries="@array/select_battery"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:scaleY=".5"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginLeft="16dp"
+                android:layout_height="2dp"
+                android:background="@drawable/gradient_bottom"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_rect_02"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_medium1"
+                    android:textColor="@color/black"
+                    android:text="Bike Document"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="88dp"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Rc"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Puc"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:text="Insurance"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Road tax"
+                        android:layout_margin="4dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Passenger tax"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textSize="12sp"
+                        android:text="Pollution Paper"
+                        android:textAllCaps="false"
+                        android:background="@drawable/customer_rprt_bt01"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </FrameLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
