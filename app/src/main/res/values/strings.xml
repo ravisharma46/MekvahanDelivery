@@ -6,12 +6,16 @@
     <string name="navigate">Navigate</string>
     <string name="pickup_date_time"><![CDATA[Pickup date & time]]></string>
     <string name="to_confirm_service_nadd_vehicle_pic_confirm_otp"><![CDATA[To confirm service\nadd vehicle pic & confirm OTP]]></string>
+    <string name="petrol_diesel_meter">Petrol/ Diesel Meter</string>
 
     <string-array name="select_battery">
         <item>Oxide</item>
         <item>Exide</item>
     </string-array>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jack_handle"><![CDATA[Jack & handle]]></string>
 
 
 </resources>
