@@ -464,17 +464,24 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:padding="8dp"
-                    android:id="@+id/tvDocument"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/montserrat_medium1"
-                    android:textColor="@color/black"
-                    android:text="Bike Document"
-                    android:layout_gravity="top"
-                    android:layout_marginLeft="88dp"
-                    android:layout_height="wrap_content" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:id="@+id/tvDocument"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:textColor="@color/black"
+                        android:text="Bike Document"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+
 
 
                 <LinearLayout
@@ -547,6 +554,8 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textScaleX=".9"
                         android:layout_marginLeft="4dp"
                         android:layout_marginTop="4dp"
                         android:layout_marginRight="4dp"
@@ -891,15 +900,23 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/frame_rect_02"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:padding="8dp"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:text="Odometer"
-                android:fontFamily="@font/montserrat_medium1"
-                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="Odometer"
+                    android:fontFamily="@font/montserrat_medium1"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+
+
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -943,15 +960,22 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/frame_rect_02"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:padding="8dp"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:text="Signature"
-                android:fontFamily="@font/montserrat_medium1"
-                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="Signature"
+                    android:fontFamily="@font/montserrat_medium1"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
