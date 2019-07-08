@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:scrollbars="none"
     android:layout_height="match_parent"
-    tools:context=".ongoingbooking_3_2">
+    tools:context=".customer_pickup.ongoingbooking_3_2">
 
 
     <FrameLayout
@@ -60,54 +60,68 @@
 
 
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_marginTop="8dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
                 android:background="@drawable/frame_rect_02"
-                android:layout_height="112dp">
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/app_grey_headline_caption"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:layout_marginLeft="24dp"
-                    android:text="Maruti Suzuki"
-                    android:layout_height="wrap_content" />
 
-                <TextView
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:textSize="16sp"
-                    android:textColor="@color/chart_deep_red"
-                    android:layout_marginTop="40dp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/montserrat_medium1"
-                    android:layout_marginLeft="24dp"
-                    android:text="WagonR"
-                    android:layout_height="wrap_content" />
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="@color/app_caption_dark_grey"
-                    android:layout_marginTop="64dp"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:layout_marginLeft="24dp"
-                    android:text="DL1R0ABC"
-                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/app_grey_headline_caption"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginLeft="24dp"
+                        android:text="Maruti Suzuki"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/chart_deep_red"
+                        android:layout_marginTop="40dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_medium1"
+                        android:layout_marginLeft="24dp"
+                        android:text="WagonR"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/app_caption_dark_grey"
+                        android:layout_marginTop="64dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginLeft="24dp"
+                        android:text="DL1R0ABC"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+
+
+
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_gravity="right"
                     android:padding="16dp"
+                    android:layout_weight="1"
                     android:src="@drawable/maruti_suzuki"
                     android:layout_height="wrap_content" />
 
 
 
 
-            </FrameLayout>
+            </LinearLayout>
 
 
 
@@ -441,25 +455,27 @@
             </FrameLayout>
 
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_marginTop="20dp"
+                android:weightSum="3"
                 android:background="@drawable/frame_rect"
-                android:layout_height="40dp">
+                android:layout_height="wrap_content">
 
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:layout_marginRight="2dp"
                     android:background="@color/app_divider_list"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="1.2 Km"
-                        android:textStyle="bold"
+                        android:text="1.2 km"
+                        android:textColor="@color/black"
                         android:layout_gravity="center"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/montserrat_medium1"
                         android:layout_height="wrap_content" />
 
@@ -467,38 +483,35 @@
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp"
-                    android:layout_marginLeft="80dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
                     android:background="@color/app_divider_list"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:text="@string/_15_min_approx"
-                        android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
                         android:fontFamily="@font/montserrat_medium1"
                         android:layout_height="wrap_content" />
 
                 </FrameLayout>
 
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_marginLeft="214dp"
-                    android:paddingRight="12dp"
-                    android:paddingLeft="12dp"
-                    android:paddingTop="10dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
                     android:background="@color/orange"
                     android:layout_height="wrap_content">
 
                     <ImageView
                         android:layout_width="16dp"
                         android:src="@drawable/ic_navigation"
-                        android:layout_gravity="left"
-                        android:layout_marginBottom="12dp"
-                        android:layout_height="20dp" />
+                        android:layout_height="16dp" />
 
 
 
@@ -506,39 +519,41 @@
                         android:layout_width="wrap_content"
                         android:text="@string/navigate"
                         android:textColor="@color/white"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="4dp"
                         android:fontFamily="@font/montserrat_medium1"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content" />
 
-                </FrameLayout>
-
-
-
-
-            </FrameLayout>
+                </LinearLayout>
 
 
 
-            <FrameLayout
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_marginTop="16dp"
+                android:weightSum="2"
                 android:layout_height="40dp">
 
                 <Button
                     android:layout_width="wrap_content"
                     android:text="View Customer Report"
+                    android:layout_weight="1"
+
                     android:background="@drawable/grey_button"
                     android:textAllCaps="false"
                     android:layout_marginLeft="16dp"
                     android:fontFamily="@font/montserrat_medium1"
-                    android:paddingLeft="32dp"
-                    android:paddingRight="32dp"
                     android:textColor="@color/white"
                     android:layout_height="wrap_content" />
 
                 <ImageView
                     android:layout_width="40dp"
+                    android:layout_weight="1"
                     android:src="@drawable/ic_qr_code"
                     android:layout_gravity="right"
                     android:layout_marginRight="16dp"
@@ -546,7 +561,7 @@
 
 
 
-            </FrameLayout>
+            </LinearLayout>
 
 
 
@@ -558,7 +573,7 @@
                 android:layout_gravity="left"
                 android:textColor="@color/app_grey_headline_caption"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semibold"
+                android:fontFamily="@font/montserrat_medium1"
                 android:layout_marginLeft="8dp"
                 android:text="Vehicle condition at pickup time"
                 android:layout_height="wrap_content" />

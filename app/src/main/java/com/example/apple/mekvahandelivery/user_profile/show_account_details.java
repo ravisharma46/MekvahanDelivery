@@ -1,4 +1,4 @@
-package com.example.apple.mekvahandelivery;
+package com.example.apple.mekvahandelivery.user_profile;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -10,6 +10,8 @@ import android.text.Html;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.apple.mekvahandelivery.R;
 
 public class show_account_details extends AppCompatActivity {
 

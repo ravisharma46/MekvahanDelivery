@@ -11,38 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".user_profile">
+        <activity android:name=".user_profile.user_profile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".show_account_details"
+            android:name=".user_profile.show_account_details"
             android:label="Account details" />
-        <activity android:name=".ongoingbooking_3_2">
+        <activity android:name=".customer_pickup.ongoingbooking_3_2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".customer_pickup.upcoming_booking_2_2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".customer_report.customer_report">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".transaction_history.transaction_1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name=".upcoming_booking_2_2">
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".transaction_history.order_history">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".customer_report">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-
-            </intent-filter>
-
-        </activity>
-
     </application>
 
 </manifest>

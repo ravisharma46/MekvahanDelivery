@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="16dp"
     android:scrollbars="none"
-    tools:context=".customer_report">
+    tools:context=".customer_report.customer_report">
 
     <LinearLayout
         android:layout_width="match_parent"

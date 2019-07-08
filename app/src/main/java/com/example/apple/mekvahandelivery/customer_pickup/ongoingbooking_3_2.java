@@ -1,5 +1,7 @@
-package com.example.apple.mekvahandelivery;
+package com.example.apple.mekvahandelivery.customer_pickup;
 
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -10,26 +12,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.TimePicker;
 
-public class upcoming_booking_2_2 extends AppCompatActivity {
+import com.example.apple.mekvahandelivery.R;
+
+import java.util.Calendar;
+
+public class ongoingbooking_3_2 extends AppCompatActivity {
 
     private LinearLayout paint_linear;
-    private TextView tvDetails;
+    private TextView tvDetails,date,time;
     private ImageView call;
-
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upcoming_booking_2_2);
+        setContentView(R.layout.activity_ongoingbooking_3_2);
 
         paint_linear=(LinearLayout)findViewById(R.id.linear_paint);
         tvDetails=(TextView)findViewById(R.id.tvDetails);
+        date=(TextView)findViewById(R.id.date);
+        time=(TextView)findViewById(R.id.time);
+
+
         call=(ImageView)findViewById(R.id.call);
 
 
@@ -40,6 +51,7 @@ public class upcoming_booking_2_2 extends AppCompatActivity {
         final Drawable upArrow = getResources().getDrawable(R.drawable.ic_keyboard_backspace_black_24dp);
         upArrow.setColorFilter(getResources().getColor(R.color.chart_deep_red), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
+
 
         tvDetails.setOnClickListener(new View.OnClickListener() {
             int check=1;
@@ -67,6 +79,14 @@ public class upcoming_booking_2_2 extends AppCompatActivity {
                 startActivity(callIntent);
             }
         });
+
+
+
+
+
+
+
+
 
 
 

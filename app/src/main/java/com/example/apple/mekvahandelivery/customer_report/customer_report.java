@@ -1,12 +1,9 @@
-package com.example.apple.mekvahandelivery;
+package com.example.apple.mekvahandelivery.customer_report;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -14,6 +11,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.apple.mekvahandelivery.R;
 
 public class customer_report extends AppCompatActivity {
 

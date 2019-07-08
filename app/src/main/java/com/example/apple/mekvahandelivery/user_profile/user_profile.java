@@ -1,4 +1,4 @@
-package com.example.apple.mekvahandelivery;
+package com.example.apple.mekvahandelivery.user_profile;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -17,6 +17,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.example.apple.mekvahandelivery.R;
+import com.example.apple.mekvahandelivery.customer_pickup.ongoingbooking_3_2;
 
 public class user_profile extends AppCompatActivity {
 

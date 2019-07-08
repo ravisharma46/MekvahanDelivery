@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/frame_rect"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:layout_gravity="left"
+            android:clickable="true"
+            android:textColor="@color/app_caption_dark_grey"
+            android:padding="8dp"
+            android:fontFamily="@font/gotham_boook"
+            android:layout_marginLeft="8dp"
+            android:text="28th, July 2018"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:padding="8dp"
+            android:layout_gravity="right"
+            android:textColor="@color/app_caption_dark_grey"
+            android:fontFamily="@font/gotham_boook"
+            android:layout_marginRight="32dp"
+            android:text="10:30 am"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:scaleY=".5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="2dp"
+        android:background="@drawable/gradient_bottom"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/frame_rect"
+        android:paddingBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/tvTotal"
+            android:layout_gravity="left"
+            android:clickable="true"
+            android:textColor="@color/green"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="16dp"
+            android:text="Total 100.00"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:padding="16dp"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:drawablePadding="4dp"
+            android:id="@+id/tvDetails"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:textColor="@color/chart_deep_red"
+            android:fontFamily="@font/gotham_boook"
+            android:layout_marginRight="12dp"
+            android:text="Details"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
