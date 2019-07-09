@@ -67,6 +67,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="Rahul kumar"
+                android:id="@+id/tvname1"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserrat_medium1"
@@ -185,6 +186,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:text="Mr. Mekvhann"
+                android:id="@+id/tvname"
                 android:layout_marginTop="4dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserrat_medium1"
@@ -271,6 +273,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:text="+91-8867714446"
+                android:id="@+id/tvmobile"
                 android:layout_marginTop="4dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserrat_medium1"
@@ -337,9 +340,8 @@
 
 
         <LinearLayout
-            android:layout_width="180dp"
+            android:layout_width="240dp"
             android:layout_weight="1"
-            android:layout_marginRight="32dp"
             android:orientation="vertical"
             android:layout_height="wrap_content">
 
@@ -348,6 +350,7 @@
                 android:text="Email id"
                 android:layout_marginTop="20dp"
                 android:textSize="8sp"
+                android:paddingLeft="8dp"
                 android:fontFamily="@font/montserrat_medium1"
                 android:textColor="@color/app_caption_dark_grey"
                 android:layout_height="wrap_content" />
@@ -355,6 +358,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:text="abc@gmail.com"
+                android:id="@+id/tvemail"
+                android:paddingLeft="8dp"
                 android:layout_marginTop="4dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserrat_medium1"
@@ -440,6 +445,7 @@
 
             <TextView
                 android:layout_width="match_parent"
+                android:id="@+id/tvaddress"
                 android:text="G-121, geeta colony\ndelhi-110086"
                 android:layout_marginTop="4dp"
                 android:textStyle="bold"
@@ -537,6 +543,7 @@
                 android:layout_width="match_parent"
                 android:text="Cabs and More"
                 android:layout_marginTop="8dp"
+                android:id="@+id/tvpartner"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserrat_medium1"
                 android:textColor="@color/black"
@@ -624,6 +631,7 @@
             android:layout_weight="1"
             android:textColor="@color/black"
             android:paddingLeft="8dp"
+            android:id="@+id/tvprofileid"
             android:fontFamily="@font/montserrat_medium1"
             android:textSize="12sp"
             android:layout_height="wrap_content" />

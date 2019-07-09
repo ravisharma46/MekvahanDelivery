@@ -17,9 +17,9 @@ import com.example.apple.mekvahandelivery.R;
 public class customer_report extends AppCompatActivity {
 
 
-    FrameLayout car,bike;
-    ImageView car_image,bike_image;
-    TextView tvbike,tvcar,document;
+    private FrameLayout car,bike;
+    private ImageView car_image,bike_image;
+    private TextView tvbike,tvcar,document;
 
 
     @Override
@@ -44,8 +44,8 @@ public class customer_report extends AppCompatActivity {
         tvcar=(TextView)findViewById(R.id.tvcar);
         document=(TextView)findViewById(R.id.tvDocument);
 
-        loadBikeFragment();
-        load_bike();
+        loadCarFragment();
+        load_car();
 
         car.setOnClickListener(new View.OnClickListener() {
             @Override

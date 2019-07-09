@@ -41,6 +41,11 @@
                 android:background="@color/chart_deep_red"
                 android:layout_height="45dp">
                 <ImageView
+                    android:layout_width="12dp"
+                    android:background="@color/chart_deep_red"
+                    android:layout_gravity="left"
+                    android:layout_height="match_parent" />
+                <ImageView
                     android:layout_width="50dp"
                     android:id="@+id/bike_image"
                     android:layout_marginTop="10dp"
@@ -48,7 +53,7 @@
                     android:layout_height="25dp" />
                 <TextView
                     android:layout_width="wrap_content"
-                    android:text="bike"
+                    android:text="Bike"
                     android:id="@+id/tvbike"
                     android:fontFamily="@font/montserrat_medium1"
                     android:layout_marginTop="12dp"

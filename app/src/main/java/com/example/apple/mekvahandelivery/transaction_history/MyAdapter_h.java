@@ -1,6 +1,7 @@
 package com.example.apple.mekvahandelivery.transaction_history;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -53,6 +54,15 @@ public class MyAdapter_h extends RecyclerView.Adapter<MyAdapter_h.ViewHolder> {
 
        viewHolder.textViewtotal.setText("Total "+"\u20B9"+" 100.00");
 
+       viewHolder.textViewdetail.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent i= new Intent(view.getContext(),transaction_1.class);
+               view.getContext().startActivity(i);
+
+           }
+       });
+
 
 
 
@@ -69,15 +79,15 @@ public class MyAdapter_h extends RecyclerView.Adapter<MyAdapter_h.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView textViewtotal,textViewcity,textViewstate,textViewrent,textViewdeposite,textViewaccomd,textViewbed;
-        public ImageView imageView;
-        public LinearLayout linearLayout;
+        private TextView textViewtotal,textViewdetail,textViewstate,textViewrent,textViewdeposite,textViewaccomd,textViewbed;
+        private ImageView imageView;
+        private LinearLayout linearLayout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
            textViewtotal= (TextView) itemView.findViewById(R.id.tvTotal);
-//            textViewcity= (TextView) itemView.findViewById(R.id.city_tv);
+           textViewdetail= (TextView) itemView.findViewById(R.id.tvDetails);
 //            textViewrent= (TextView) itemView.findViewById(R.id.rent_tv);
 //            textViewdeposite= (TextView) itemView.findViewById(R.id.deposite_tv);
 //            textViewaccomd= (TextView) itemView.findViewById(R.id.accomd_tv);

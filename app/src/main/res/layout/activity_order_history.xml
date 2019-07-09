@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Customer"
-                    android:id="@+id/tvbike"
+                    android:id="@+id/tvCustomer"
                     android:paddingTop="8dp"
                     android:paddingBottom="16dp"
                     android:fontFamily="@font/montserrat_medium1"
@@ -43,6 +43,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_1"
                     android:layout_height="2dp"
                     android:background="@color/chart_deep_red"/>
 
@@ -58,7 +60,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Service Partner"
-                    android:id="@+id/tvcar"
+                    android:id="@+id/tvService_part"
                     android:paddingTop="8dp"
                     android:paddingBottom="16dp"
                     android:fontFamily="@font/montserrat_medium1"
@@ -69,6 +71,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_2"
                     android:layout_height="2dp"
                     android:background="@color/black1"/>
 

@@ -16,6 +16,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="jack_handle"><![CDATA[Jack & handle]]></string>
+    <string name="drop_date_time"><![CDATA[Drop date & time]]></string>
+    <string name="serviced_drop_done"><![CDATA[Serviced & Drop Done]]></string>
 
 
 </resources>
