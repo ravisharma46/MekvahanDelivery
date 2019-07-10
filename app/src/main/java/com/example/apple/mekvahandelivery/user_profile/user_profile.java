@@ -1,13 +1,19 @@
 package com.example.apple.mekvahandelivery.user_profile;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Build;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -44,10 +50,12 @@ public class user_profile extends AppCompatActivity {
 
     private Button change_passWord,bt_done;
     private FrameLayout account_details;
-    private TextView name,mobile,email,address,partnerType,executive_id,name_1;
+    private TextView name,mobile,email,address,partnerType,executive_id,name_1,update_pic;
     private static final String myUrl="https://mekvahan.com/api/delivery/deliveryBoy";
    //private static final String myUrl="https://mekvahan.com/api/user/delivery/completeDelivery";
     private CircleImageView imageView;
+    private static final int GALLARY_REQUEST = 1;
+    private int mFlag = 0;
 
 
     @Override
@@ -67,6 +75,7 @@ public class user_profile extends AppCompatActivity {
         address=(TextView) findViewById(R.id.tvaddress);
         partnerType=(TextView) findViewById(R.id.tvpartner);
         executive_id=(TextView) findViewById(R.id.tvprofileid);
+        update_pic=(TextView) findViewById(R.id.tvupdatepic);
 
 
 
@@ -78,6 +87,28 @@ public class user_profile extends AppCompatActivity {
         final Drawable upArrow = getResources().getDrawable(R.drawable.ic_keyboard_backspace_black_24dp);
         upArrow.setColorFilter(getResources().getColor(R.color.chart_deep_red), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
+
+
+
+        update_pic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (ContextCompat.checkSelfPermission(user_profile.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                        != PackageManager.PERMISSION_GRANTED) {
+
+                    ActivityCompat.requestPermissions(user_profile.this,
+                            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
+                    return;
+                }
+
+                mFlag = 2;
+                Intent gallaryIntent = new Intent(Intent.ACTION_PICK);
+                gallaryIntent.setType("image/*");
+                gallaryIntent.putExtra("flag",1);
+
+                startActivityForResult(gallaryIntent,GALLARY_REQUEST);
+            }
+        });
 
 
         change_passWord.setOnClickListener(new View.OnClickListener() {
@@ -105,7 +136,7 @@ public class user_profile extends AppCompatActivity {
             }
         });
 
-//userLogin();
+         //userLogin();
 
     }
 
@@ -306,5 +337,16 @@ public class user_profile extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
+        if(requestCode == GALLARY_REQUEST && resultCode == RESULT_OK && data != null) {
+            Uri imageUri = data.getData();
+
+            imageView.setImageURI(imageUri);
+
+
+        }
+    }
 }

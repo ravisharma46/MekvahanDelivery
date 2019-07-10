@@ -37,6 +37,7 @@
                 />
             <TextView
                 android:layout_width="wrap_content"
+                android:id="@+id/tvupdatepic"
                 android:text="(Update Photo)"
                 android:textSize="10sp"
                 android:textColor="@color/chart_deep_red"
@@ -749,6 +750,7 @@
             android:layout_width="wrap_content"
             android:text="Parking place Picture"
             android:textSize="8sp"
+            android:paddingBottom="8dp"
             android:fontFamily="@font/montserrat_medium1"
             android:textColor="@color/app_caption_dark_grey"
             android:layout_height="wrap_content" />
@@ -767,7 +769,6 @@
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-
                     android:layout_height="wrap_content">
 
                     <FrameLayout
